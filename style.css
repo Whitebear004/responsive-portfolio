@@ -176,10 +176,12 @@ header{
      p{
           font-size: 1.6rem;
           padding-left: 2.4rem;
+         padding-right: 0.2rem;
      }
      img{
           position: relative;
           top: 3rem;
           left: 2rem;
      }
+
 }
