@@ -185,3 +185,14 @@ header{
      }
 
 }
+
+footer{
+     height: 9rem;
+     background-color:#1A1A1A ;
+     color: #FFFFFF;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top:16rem ;
+}
+
