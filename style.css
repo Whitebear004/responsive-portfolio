@@ -10,6 +10,7 @@
     list-style-type: none;
     text-decoration: none;
     font-family: "inter";
+     text-decoration: none;
 }
  html{
    font-size: 62.5%; 
@@ -62,15 +63,6 @@ header{
       ul a{
             text-decoration: none;
           }
-     /* ul{
-   
-        color: yellow;
-         top:100%;
-        left:0;
-        background:#1A1A1A;
-        width:180px;
-       padding:10px 0;
-     } */
     }
      .menu-bth{
           display: flex;
@@ -96,44 +88,50 @@ header{
 
      }
      
+.navbar-menu:hover ul {
+   display: block;
+}
 .navbar-menu ul {
     display: none;
+    padding-top: 10px;
     position:absolute;
-    top:100%;
-    left:0;
-    background:#b10a0a;
-    /* width:180px; */
-    padding:10px 0;
-  
+    top:70%;
+    left:13px;
+    background-color: #FF6B1A;
+    width:103px;
+    border-radius:0rem 0rem 1rem 1rem;
+     li{ 
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 245, 245);
+        border-radius: 0.2rem;
+        margin-bottom: 0.8rem;
+     }
 }
-/* .navbar-menu:hover ul {
-    display: block;
-}
-.navbar-menu ul li {
-    padding: 10px 20px;
-}
-.navbar-menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.6rem;
-} */
+
  .landing-page{
      height: 37rem;
      z-index: -2;
      background-image: url(./assets-image/Rectangle\ 21.png);
-     
+     z-index: -1; 
+ }
+ main{
+     background-color: #F5F5F5;
  }
  .landing-page div:first-child{
      position: relative;
      display: flex;
      justify-content: center;
      top: 11rem;
-     z-index: -2;
-      img{
+     img{
           position: absolute;
           width:20rem;
           height: auto;
+          z-index: 0;
+          opacity:0.2;
       }
+        
+     
  }
   .welcome{
      color: #FFFFFF;
@@ -142,12 +140,13 @@ header{
      align-items: center;
      flex-direction: column;
      padding-top:14rem;
-      z-index: 1;
-      
+     position: relative;
+     z-index: 1;
           h2{
        font-weight: 700;
        font-size:2.4rem ;
        margin-bottom:1rem ;
+      
         }
         p{
           text-align: center;
