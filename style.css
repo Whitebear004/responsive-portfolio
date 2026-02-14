@@ -112,7 +112,7 @@ header{
  .landing-page{
      height: 37rem;
      z-index: -2;
-     background-image: url(./assets-image/Rectangle\ 21.png);
+     background-image: url(./assets/imige/Rectangle\ 21.png);
      z-index: -1; 
  }
  main{
@@ -167,7 +167,7 @@ header{
      height: 20rem;
      box-shadow: 0px 10px 20px 0px rgba(20, 20, 20, 0.1);
      background-color: white;
-
+     border-radius: 0.4rem;
      h3{
            font-size: 2.4rem;
            margin-bottom: 1rem;
@@ -176,16 +176,15 @@ header{
      p{
           font-size: 1.6rem;
           padding-left: 2.4rem;
-         padding-right: 0.2rem;
+          width: auto;
+          padding-right: 0.2rem;
      }
      img{
           position: relative;
           top: 3rem;
           left: 2rem;
      }
-
 }
-
 footer{
      height: 9rem;
      background-color:#1A1A1A ;
@@ -195,4 +194,3 @@ footer{
      align-items: center;
      margin-top:16rem ;
 }
-

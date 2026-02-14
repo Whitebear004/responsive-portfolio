@@ -1,0 +1,15 @@
+@media (min-width: 768px){
+
+    .logo-wrapper a img{
+        left: 23rem;
+    }
+  
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        .cards{
+            width: 24rem;
+        }
+    }
+}
