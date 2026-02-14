@@ -129,13 +129,11 @@ header{
      justify-content: center;
      top: 11rem;
      z-index: -2;
-     img{
-          position:absolute;
-          width:60rem;
+      img{
+          position: absolute;
+          width:20rem;
           height: auto;
-          bottom:-24rem;
-                 
-     }
+      }
  }
   .welcome{
      color: #FFFFFF;
