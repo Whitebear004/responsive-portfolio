@@ -85,55 +85,73 @@ header{
            
 
      }
+   @media (max-width:757px){
 
-.navbar-menu:hover ul {
+     .nav-container:hover ul {
       display: grid;
       grid-template-columns: repeat(1,auto);
       grid-template-rows: repeat(4,auto);
       place-items: center;
-   
+      row-gap: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #FF6B1A;
+}
 }
 
 .menu ul{
    display: none;
-}
-menu ul {
-      
-        display: flex;
-        justify-content: center;
-        color: rgb(255, 245, 245);
-        border-radius: 0.2rem;
-        margin-bottom: 0.8rem;
-        a li {
+     a{
         color: white;
-        text-decoration: none;
-        }
+     }
 }
-
-
 .navbar-menu ul {
-    
-    padding-top: 10px;
     position:absolute;
     top:70%;
     left:13px;
-    background-color: #FF6B1A;
     width:103px;
     border-radius:0rem 0rem 1rem 1rem;
     
 }
 
-@media (min-width: 991px) {
+@media (min-width: 757px) {
+     .navbar-menu{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           
+     }
   .menu ul {
      display: flex;
-   
-  }
-  .navbar-menu{
-     display: flex;
+     position: static;
+     justify-content: center;
+     align-items: center;
+     gap: 6.1rem;
+     color: #FFFFFF;
+     font-weight: 500;
+     font-size:1.7rem ;
+     li a{
+            display: flex;
+             width:10.3rem;
+           height: 2.8rem;
+            
+           justify-content: center;
+           align-items: center;
+           border-radius: 0.8rem;
+           transition: background-color 0.2s linear,  transform 0.4s linear; 
+     }
+     }
+  .menu ul li a:hover{
+           background-color: #FF6B1A;
+           transform: scale(1.1);
+          
   }
   .menu-btn{
      display: none;
   }
+  
  
 }
  .landing-page{
@@ -155,7 +173,7 @@ menu ul {
           width:20rem;
           height: auto;
           z-index: 0;
-          opacity:0.2;
+          opacity:0.2;                                 
       }
         
      
