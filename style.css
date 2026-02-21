@@ -185,8 +185,20 @@ menu ul {
      row-gap: 2rem;
      place-items: center;
 }
-@media (min-width:925px){
+@media (max-width:975px) and (min-width:657px){
     .gallery{
+       display: grid;
+       grid-template-columns: repeat(2,auto);
+       grid-template-rows:repeat(3,auto) ;
+       margin-top: 3.9rem;
+      
+    }
+      .gallery .cards:nth-child(5){
+        margin-bottom: 16rem;
+    }
+}
+ /* @media{
+     .gallery{
        display: grid;
        grid-template-columns: repeat(2,1fr);
        grid-template-rows:repeat(3,auto) ;
@@ -196,7 +208,8 @@ menu ul {
       .gallery .cards:nth-child(5){
         margin-bottom: 16rem;
     }
-}
+
+ } */
 .cards{
       width:32rem;
      height: 20rem;
