@@ -227,6 +227,7 @@ header{
      background-color: white;
      border-radius: 1.2rem;
      border-top:0.5rem solid  #FF6B1A;
+     transition: transform 0.5s linear;
      h3{
            font-size: 2.4rem;
            margin-bottom: 1rem;
@@ -244,6 +245,9 @@ header{
           left: 2rem;
      }
  
+}
+.cards:hover{
+     transform: scale(1.1);
 }
  .gallery .cards:nth-child(6){
      margin-bottom: 16rem;
