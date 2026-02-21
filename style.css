@@ -64,7 +64,7 @@ header{
             text-decoration: none;
           }
     }
-     .menu-bth{
+     .menu-btn{
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -91,8 +91,21 @@ header{
 .navbar-menu:hover ul {
    display: block;
 }
+.menu ul{
+   display: none;
+}
+menu ul {
+      
+        display: flex;
+        justify-content: center;
+        color: rgb(255, 245, 245);
+        border-radius: 0.2rem;
+        margin-bottom: 0.8rem;
+}
+
+
 .navbar-menu ul {
-    display: none;
+    
     padding-top: 10px;
     position:absolute;
     top:70%;
@@ -100,15 +113,24 @@ header{
     background-color: #FF6B1A;
     width:103px;
     border-radius:0rem 0rem 1rem 1rem;
-     li{ 
-        display: flex;
-        justify-content: center;
-        color: rgb(255, 245, 245);
-        border-radius: 0.2rem;
-        margin-bottom: 0.8rem;
-     }
+    
 }
 
+@media (min-width: 991px) {
+  .menu ul {
+     display: flex;
+   
+  }
+  .navbar-menu{
+     display: flex;
+  }
+  .menu-btn{
+     display: none;
+  }
+  ul{
+    
+  }
+}
  .landing-page{
      height: 37rem;
      z-index: -2;
@@ -184,7 +206,38 @@ header{
           top: 3rem;
           left: 2rem;
      }
+ 
 }
+ .gallery .cards:nth-child(6){
+     margin-bottom: 16rem;
+}
+ @media (min-width:991px){
+
+    .logo-wrapper a img{
+        left: 34rem;
+    }
+  
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        .cards{
+            width: 29rem;
+                p{
+                font-size: 1.6rem;
+                padding-left: 1.4rem;
+              
+               padding-right: 1.2rem;
+     }
+        }
+    }
+    .gallery .cards:nth-child(4), .gallery .cards:nth-child(5){
+        margin-bottom: 16rem;
+    }
+} 
+
 footer{
      height: 9rem;
      background-color:#1A1A1A ;
@@ -192,5 +245,5 @@ footer{
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top:16rem ;
-}
+     
+     }
